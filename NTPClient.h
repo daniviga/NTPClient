@@ -38,6 +38,13 @@ class NTPClient {
     NTPClient(UDP& udp, IPAddress poolServerIP, long timeOffset, unsigned long updateInterval);
 
     /**
+     * Set time server IP address
+     *
+     * @param poolServerIP
+     */
+    void setPoolServerIP(IPAddress poolServerIP);
+
+    /**
      * Set time server name
      *
      * @param poolServerName
